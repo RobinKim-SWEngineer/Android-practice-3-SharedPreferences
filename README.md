@@ -20,7 +20,7 @@ In such case we can use **SharedPreferences**. It is an interface whose object p
    editor.putString("previous_order", textViewOrderList.getText().toString());
    editor.apply();
    ```
-   > Good place to do this process would be inside `onOptionsItemSelected(MenuItem item) {...}`, which is called when an item in options mens is selected. So if we click the arrow button to **navigate back** to the previous activity, the data will be saved into shared preferences file that we will be able to read from later on.
+   > Good place to do this process would be inside `onOptionsItemSelected(MenuItem item) {...}`, which is called when an item in options menu is selected. So if we click the arrow button to **navigate back** to the previous activity, the data will be saved into shared preferences file that we will be able to read from later on.
    
    
  - When reading, we first get shared preferences instance, and call get methods upon it.
